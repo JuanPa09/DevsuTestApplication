@@ -1,0 +1,6 @@
+apiVersion: v2
+name: api
+description: Node.js API desplegada en EKS
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
