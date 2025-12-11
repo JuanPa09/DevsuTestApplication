@@ -125,4 +125,38 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.backup
+
+# Archivos de bloqueo del proveedor
+.terraform.lock.hcl
+
+# Carpeta de trabajo de Terraform
+.terraform/
+
+# Crash logs de Terraform
+crash.log
+
+# Archivos de override 
+*.tfvars
+*.tfvars.json
+
+# Archivos de override 
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configs locales
+.terraformrc
+terraform.rc
+.terraform
+
+charts/
+*.tgz
+index.yaml
+tmp/
+tests/output/
+
 .env

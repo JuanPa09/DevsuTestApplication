@@ -1,0 +1,30 @@
+replicaCount: 2
+
+image:
+  repository: "690687753978.dkr.ecr.us-east-1.amazonaws.com/devsu-project-dev-app"
+  tag: "v1"
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+
+containerPort: 8000
+
+resources: {}
+
+autoscaling:
+  enabled: true
+  minReplicas: 2
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 70
+  # targetMemoryUtilizationPercentage: 80
+
+secretEnv:
+  DATABASE_NAME: "./dev.sqlite"
+  DATABASE_USER: "user"
+  DATABASE_PASSWORD: "password"
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
