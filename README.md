@@ -36,7 +36,10 @@ Este documento describe la arquitectura, infraestructura, pipelines y procesos n
     - [Pasos para Ejecutar End-to-End](#pasos-para-ejecutar-end-to-end)
   - [Mejoras y Consideraciones para Producción](#mejoras-y-consideraciones-para-producción)
   - [Evidencias](#evidencias)
+    - [CI/CD](#cicd)
     - [Terraform](#terraform)
+    - [K8s](#k8s)
+  - [Recursos](#recursos)
 
 ---
 
@@ -373,6 +376,14 @@ curl http://<EXTERNAL-IP>/
 
 ## Evidencias
 
+### CI/CD
+
+**CI**
+![ci](/docs/images/ci.png)
+
+**CD**
+![cd](/docs/images/cd.png)
+
 ### Terraform
 Se adjuntan capturas de componentes escenciales:
 
@@ -387,4 +398,21 @@ Se adjuntan capturas de componentes escenciales:
 
 **Creción de outputs**
 ![tf-outputs](/docs/images/tf-outputs.png)
+
+### K8s
+
+**Pods & Service Info**
+![k8s-pods](/docs/images/k8s-pods.png)
+
+**App Info**
+![k8s-app-info](/docs/images/k8s-app-info.png)
+
+**Pod Log**
+![k8s-pod-log](/docs/images/k8s-pod-log.png)
+
+## Recursos
+
+**Repositorio:** https://github.com/JuanPa09/DevsuTestApplication
+**Url de pública para pruebas:** http://ac50dad93f48c41df89cdc568e539614-559219699.us-east-1.elb.amazonaws.com/api/users
+**CI/CD:** https://github.com/JuanPa09/DevsuTestApplication/actions
 
