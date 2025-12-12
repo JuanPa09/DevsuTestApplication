@@ -4,16 +4,13 @@ on:
   push:
     branches: 
       - main
-  pull_request:
-    branches: 
-      - main
 
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: 690687753978.dkr.ecr.us-east-1.amazonaws.com/devsu-project-dev-app
   EKS_CLUSTER_NAME: devsu-project-dev-eks
   HELM_RELEASE_NAME: app
-  HELM_CHART_PATH: infra/helm/app
+  HELM_CHART_PATH: helm/app
 
 jobs:
   ci:
