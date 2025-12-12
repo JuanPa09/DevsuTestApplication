@@ -28,5 +28,7 @@ spec:
           envFrom:
             - secretRef:
                 name: {{ include "app.fullname" . }}-db
+            - configMapRef:
+                name: {{ include "app.fullname" . }}-config
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

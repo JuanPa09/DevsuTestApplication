@@ -11,6 +11,11 @@ service:
 
 containerPort: 8000
 
+ingress:
+  enabled: false
+  host: "devsu-demo.local"
+
+
 resources: {}
 
 autoscaling:
